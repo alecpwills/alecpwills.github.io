@@ -1,0 +1,4 @@
+Sitemap: https://alecpwills.github.io/sitemapindex.xml
+
+User-Agent: *
+Host: alecpwills.github.io
