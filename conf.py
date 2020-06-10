@@ -139,12 +139,13 @@ TRANSLATIONS_PATTERN = '{path}.{lang}.{ext}'
 
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
-        ("/home/index.html", "Home"),
+        ('/index.html', 'Home'),
         ("/about-me/index.html", "About Me"),
+        ("/research/index.html", "Research"),
         ("/cv/index.html", "CV"),
-        ("/archive.html", "Archive"),
-        ("/categories/", "Tags"),
-        ("/rss.xml", "RSS feed"),
+        #("/archive.html", "Archive"),
+        #("/categories/", "Tags"),
+        #("/rss.xml", "RSS feed"),
     ),
 }
 
@@ -546,7 +547,7 @@ HIDDEN_AUTHORS = ['Guest']
 # Final location for the main blog page and sibling paginated pages is
 # output / TRANSLATION[lang] / INDEX_PATH / index-*.html
 # (translatable)
-# INDEX_PATH = ""
+INDEX_PATH = "blog"
 
 # Optional HTML that displayed on “main” blog index.html files.
 # May be used for a greeting. (translatable)
@@ -1102,19 +1103,20 @@ MARKDOWN_EXTENSIONS = ['markdown.extensions.fenced_code', 'markdown.extensions.c
 # long time). Insert anything you want here, or even make it empty (which is
 # the default right now)
 # (translatable)
-# SOCIAL_BUTTONS_CODE = """
-# <!-- Social buttons -->
-# <div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
-# <a class="addthis_button_more">Share</a>
-# <ul><li><a class="addthis_button_facebook"></a>
-# <li><a class="addthis_button_google_plusone_share"></a>
-# <li><a class="addthis_button_linkedin"></a>
-# <li><a class="addthis_button_twitter"></a>
-# </ul>
-# </div>
-# <script src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script>
-# <!-- End of social buttons -->
-# """
+SOCIAL_BUTTONS_CODE = """
+<!-- Go to www.addthis.com/dashboard to customize your tools --> 
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ee039711bbf99e7"></script>
+ """
+#<div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+#<a class="addthis_button_more">Share</a>
+#<ul><li><a class="addthis_button_github" href="https://github.com/alecpwills"></a>
+#<li><a class="addthis_button_linkedin" href="https://www.linkedin.com/in/alecpwills/"></a>
+#</ul>
+#</div>
+#<script src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script>
+
+#<li><a class="addthis_button_twitter"></a>
+#<li><a class="addthis_button_google_plusone_share"></a>
 
 # Show link to source for the posts?
 # SHOW_SOURCELINK = True
