@@ -8,6 +8,13 @@
     width: 60%; /* The width is 60%, by default */
   }
   
+  img {
+    max-height: 200%;
+    max-width: 200%;
+    height:auto;
+    width:auto;
+  }
+
   /* Use a media query to add a breakpoint at 800px: */
   @media screen and (max-width: 800px) {
     .left, .main, .right {
