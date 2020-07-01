@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $("img").hover(makeBigger, returnOriginal);
+    $("img.imgfluid").hover(makeBigger, returnOriginal);
 
     $('div.divimg').hover(function() {
         $('div.divimg').css({opacity:'0.6'});
@@ -16,3 +16,10 @@ function makeBigger() {
 function returnOriginal() {
     $(this).animate({height:"-=10%", width:"-=10%"});
 };
+
+function calculateAspectRatioFit(srcWidth, srcHeight, maxWidth, maxHeight) {
+
+    var ratio = Math.min(maxWidth / srcWidth, maxHeight / srcHeight);
+
+    return { width: srcWidth*ratio, height: srcHeight*ratio };
+ }
